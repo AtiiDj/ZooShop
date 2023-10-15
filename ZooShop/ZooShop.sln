@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.Models", "ZooShop\ZooShop.Models.csproj", "{21E65C4E-7945-47C0-8FD5-568AB089FE34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooShop.Models", "ZooShop\ZooShop.Models.csproj", "{21E65C4E-7945-47C0-8FD5-568AB089FE34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.Services", "ZooShop.Services\ZooShop.Services.csproj", "{FDB5F5C5-F251-4E8F-9F52-398FBCDF133A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooShop.Services", "ZooShop.Services\ZooShop.Services.csproj", "{FDB5F5C5-F251-4E8F-9F52-398FBCDF133A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.FormApp", "ZooShop.FormApp\ZooShop.FormApp.csproj", "{4745F069-A83C-4C66-83D4-0970169B598F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooShop.FormApp", "ZooShop.FormApp\ZooShop.FormApp.csproj", "{4745F069-A83C-4C66-83D4-0970169B598F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.Data", "ZooShop.Data\ZooShop.Data.csproj", "{832E7BCA-EA3E-4025-BBC4-498138904416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooShop.Data", "ZooShop.Data\ZooShop.Data.csproj", "{832E7BCA-EA3E-4025-BBC4-498138904416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.Console.App", "ZooShop.Console.App\ZooShop.Console.App.csproj", "{33309303-20A7-4568-A5D0-5D27599EC155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooShop.Console.App", "ZooShop.Console.App\ZooShop.Console.App.csproj", "{33309303-20A7-4568-A5D0-5D27599EC155}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.DataSeeder", "ZooShop.DataSeeder\ZooShop.DataSeeder.csproj", "{3FD2473F-CD4B-4651-A0AC-0EEE9288127C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooShop.DataSeeder", "ZooShop.DataSeeder\ZooShop.DataSeeder.csproj", "{3FD2473F-CD4B-4651-A0AC-0EEE9288127C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
