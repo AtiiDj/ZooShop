@@ -6,7 +6,7 @@ namespace ZooShop.Console.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
