@@ -9,6 +9,27 @@ namespace Services
     public class ShopService
     {
         private AppDbContext context;
+        public string AddTown(string name)
+        {
+            StringBuilder message = new StringBuilder();
+            bool isValid = true;
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                message.AppendLine($"Invalid Town");
+                isValid = false;
+            }
+            if (isValid)
+            {
+                Town t = new Town() { Name = name };
+                using (context = new AppDbContext())
+                {
+                    context.Add(t);
+                    context.SaveChanges();
+                    message.AppendLine($"{nameof(Town)} {name} is added");
+                }
+            }
+            return message.ToString().TrimEnd();
+        }
         public Shop GetShopById(int id)
         {
             if (id < 0)

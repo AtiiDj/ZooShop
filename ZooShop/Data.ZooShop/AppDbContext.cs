@@ -22,5 +22,21 @@ namespace Data.ZooShop
             }
             optionsBuilder.UseLazyLoadingProxies();
         }
+       
+            protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Shop>(
+                options =>
+                {
+                    options
+                        .HasMany(x => x.Animals)
+                        .WithOne(x => x.Shops)
+                        .OnDelete(DeleteBehavior.Cascade);
+                   
+                });
+        }
     }
+    
 }

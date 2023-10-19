@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{93D1467A-8684-4CF4-85E7-04164AB595A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{93D1467A-8684-4CF4-85E7-04164AB595A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{C8634906-7959-4E11-93E4-3E85734898E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{C8634906-7959-4E11-93E4-3E85734898E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppZooShop", "ConsoleAppZooShop\ConsoleAppZooShop.csproj", "{50EFAF63-8795-49F7-B170-66DCBA70BFBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppZooShop", "ConsoleAppZooShop\ConsoleAppZooShop.csproj", "{50EFAF63-8795-49F7-B170-66DCBA70BFBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.ZooShop", "Data.ZooShop\Data.ZooShop.csproj", "{A6A04A76-7FF1-471F-B630-9468128DC027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.ZooShop", "Data.ZooShop\Data.ZooShop.csproj", "{A6A04A76-7FF1-471F-B630-9468128DC027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooShop.Seeder", "ZooShop.Seeder\ZooShop.Seeder.csproj", "{D019D175-4C53-49EC-94B6-F3E294A928EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A6A04A76-7FF1-471F-B630-9468128DC027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A04A76-7FF1-471F-B630-9468128DC027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A04A76-7FF1-471F-B630-9468128DC027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D019D175-4C53-49EC-94B6-F3E294A928EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D019D175-4C53-49EC-94B6-F3E294A928EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D019D175-4C53-49EC-94B6-F3E294A928EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D019D175-4C53-49EC-94B6-F3E294A928EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
