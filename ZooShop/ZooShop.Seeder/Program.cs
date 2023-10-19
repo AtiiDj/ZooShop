@@ -12,10 +12,11 @@ namespace ZooShop.Seeder
         private static ShopService sService = new ShopService();
         public static void Main(string[] args)
         {
-            SeedAnimal();
+            SeedTowns();
             SeedClients();
             SeedShops();
-            SeedTowns();
+            SeedAnimal();
+
         }
         public static void SeedTowns()
         {
@@ -27,31 +28,6 @@ namespace ZooShop.Seeder
                 t.Add("Sofia");
                 t.Add("Varna");
                 t.Add("Ruse");
-                t.Add("Blagoevgrad");
-                t.Add("Burgas");
-                t.Add("Bansko");
-                t.Add("London");
-                t.Add("Rome");
-                t.Add("Paris");
-                t.Add("Helzinki");
-                t.Add("Otawa");
-                t.Add("New York");
-                t.Add("Washington");
-                t.Add("Pernik");
-                t.Add("Dubai");
-                t.Add("Ciro");
-                t.Add("Buenos Aires");
-                t.Add("Montevideo");
-                t.Add("Monaco");
-                t.Add("Normandy");
-                t.Add("Berlin");
-                t.Add("Vienna");
-                t.Add("Munchen");
-                t.Add("Limasol");
-                t.Add("Madrid");
-                t.Add("Lisbon");
-                t.Add("Barcelona");
-                t.Add("Porto");
 
                 for (int i = 0; i < t.Count; i++)
                 {
@@ -67,21 +43,21 @@ namespace ZooShop.Seeder
         }
         public static void SeedClients()
         {
-          
-            Console.WriteLine(cService.AddClient("Serkan", "Bolat"));
-            Console.WriteLine(cService.AddClient("Eda", "Yildiz"));
+
+            Console.WriteLine(cService.AddClient("Serkan", "Bolat", 1));
+            Console.WriteLine(cService.AddClient("Eda", "Yildiz", 2));
         }
         public static void SeedShops()
         {
 
-            Console.WriteLine(sService.AddShop("Happy animal"));
-            Console.WriteLine(sService.AddShop("Smiling animal"));
+            Console.WriteLine(sService.AddShop("Happy animal", 4));
+            Console.WriteLine(sService.AddShop("Smiling animal", 3));
 
         }
         public static void SeedAnimal()
         {
-            Console.WriteLine(aService.AddAnimal("Konn","dog","black"));
-            Console.WriteLine(aService.AddAnimal("Steve", "koala", "White"));
+            Console.WriteLine(aService.AddAnimal("Konn", "dog", "black", 1, 1));
+            Console.WriteLine(aService.AddAnimal("Steve", "koala", "White", 2, 2));
         }
-        }
+    }
 }

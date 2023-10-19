@@ -1,16 +1,16 @@
-﻿using Data.ZooShop;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ZooShop.Models;
+using ZooShop.Data;
 
 namespace Services
 {
     public class AnimalService
     {
         private AppDbContext context;
-        public string AddAnimal(string name,  string type, string colour)
+        public string AddAnimal(string name,  string type, string colour,int shopId,int clientId)
         {
             StringBuilder msg = new StringBuilder();
             bool isValid = true;
@@ -36,9 +36,10 @@ namespace Services
                     Animal p = new Animal()
                     {
                         Name = name,
-                        Type=type,
-                        Colour=colour,
-                        
+                        Type = type,
+                        Colour = colour,
+                        ShopId = shopId,
+                        ClientId = clientId
 
                     };
                     this.context.Animals.Add(p);

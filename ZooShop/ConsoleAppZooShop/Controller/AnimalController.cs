@@ -99,8 +99,14 @@ namespace ConsoleAppZooShop.Controller
                 Console.Write($"> Enter colour: ");
                 string colour = Console.ReadLine();
 
+                Console.Write($"> Enter town id: ");
+                int town = int.Parse(Console.ReadLine());
 
-                string result = cs.AddAnimal(name,type,colour);
+                Console.Write($"> Enter client id: ");
+                int client = int.Parse(Console.ReadLine());
+
+
+                string result = cs.AddAnimal(name,type,colour,town,client);
                 Console.WriteLine(result);
                 int projectId = cs.GetAnimalIdByName(name);
               

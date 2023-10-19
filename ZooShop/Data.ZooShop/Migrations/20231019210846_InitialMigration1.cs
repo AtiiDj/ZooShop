@@ -2,7 +2,7 @@
 
 namespace Data.ZooShop.Migrations
 {
-    public partial class InitialMigration12 : Migration
+    public partial class InitialMigration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -37,7 +37,7 @@ namespace Data.ZooShop.Migrations
                         column: x => x.TownId,
                         principalTable: "Towns",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -57,7 +57,7 @@ namespace Data.ZooShop.Migrations
                         column: x => x.TownId,
                         principalTable: "Towns",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -80,13 +80,13 @@ namespace Data.ZooShop.Migrations
                         column: x => x.ClientId,
                         principalTable: "Clients",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Animals_Shops_ShopId",
                         column: x => x.ShopId,
                         principalTable: "Shops",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -107,8 +107,7 @@ namespace Data.ZooShop.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Shops_TownId",
                 table: "Shops",
-                column: "TownId",
-                unique: true);
+                column: "TownId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

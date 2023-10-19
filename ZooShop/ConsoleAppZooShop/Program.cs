@@ -1,4 +1,5 @@
 ﻿using ConsoleAppZooShop.Controller;
+using Services;
 using System;
 using System.Text;
 
@@ -24,7 +25,7 @@ namespace ConsoleAppZooShop
                     case "2":
                         new ClientController();
                         break;
-                   
+
                     default:
                         Console.WriteLine("Invalid command!");
                         break;
@@ -38,7 +39,7 @@ namespace ConsoleAppZooShop
             sb.AppendLine($"\t0: Back");
             sb.AppendLine($"\t1: Animals");
             sb.AppendLine($"\t2: Clients");
-          
+
             Console.WriteLine(sb.ToString().TrimEnd());
         }
     }

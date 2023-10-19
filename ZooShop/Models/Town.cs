@@ -14,6 +14,6 @@ namespace ZooShop.Models
         [MaxLength(100)]
         public string Name { get; set; }
         public virtual ICollection<Client> Clients { get; set; } = new List<Client>();
-        public virtual Shop Shops { get; set; }
+        public virtual ICollection<Shop> Shops { get; set; } = new List<Shop>();
     }
 }

@@ -88,21 +88,10 @@ namespace ConsoleAppZooShop.Controller
             string name = Console.ReadLine();
             Console.Write($"> Enter last name: ");
             string lastName = Console.ReadLine();
-            Console.Write($"> Enter address name: ");
-            string address = Console.ReadLine();
             Console.Write($"> Enter town: ");
-            string town = Console.ReadLine();
-            Console.Write($"> Enter phone number(it has to be 10 digits only): ");
-            string number = Console.ReadLine();
-            if (number.Count() != 10)
-            {
-                Console.WriteLine("Invalid phone number!");
-                WaitPressKey();
-                return;
-            }
-            Console.Write($"> Enter email: ");
-            string email = Console.ReadLine();
-            string result = cs.AddClient(name, lastName);
+            int town = int.Parse(Console.ReadLine());
+           
+            string result = cs.AddClient(name, lastName,town);
             Console.WriteLine(result);
             WaitPressKey();
         }
@@ -134,7 +123,6 @@ namespace ConsoleAppZooShop.Controller
             sb.AppendLine($"\t0: Back");
             sb.AppendLine($"\t1: Client list");
             sb.AppendLine($"\t2: Add new client");
-            sb.AppendLine($"\t3: Get exact client info");
             Console.WriteLine(sb.ToString().TrimEnd());
         }
     }

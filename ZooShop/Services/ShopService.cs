@@ -1,7 +1,8 @@
-﻿using Data.ZooShop;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ZooShop.Data;
 using ZooShop.Models;
 
 namespace Services
@@ -50,7 +51,7 @@ namespace Services
             context.SaveChanges();
             return "Animal is suspended!";
         }
-        public string AddShop(string name)
+        public string AddShop(string name,int townId)
         {
             StringBuilder msg = new StringBuilder();
             bool isValid = true;
@@ -68,7 +69,7 @@ namespace Services
                     Shop p = new Shop()
                     {
                         Name = name,
-                       
+                       TownId=townId
                     };
                     this.context.Shops.Add(p);
                     this.context.SaveChanges();

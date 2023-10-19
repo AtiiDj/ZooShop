@@ -1,8 +1,8 @@
-﻿using Data.ZooShop;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ZooShop.Data;
 using ZooShop.Models;
 
 public class ClientService
@@ -86,7 +86,7 @@ public class ClientService
             }
         }
     }
-    public string AddClient(string firstName, string lastName)
+    public string AddClient(string firstName, string lastName, int townId)
     {
         StringBuilder msg = new StringBuilder();
         bool isValid = true;
@@ -108,6 +108,7 @@ public class ClientService
                 {
                     FirstName = firstName,
                     LastName = lastName,
+                    TownId=townId
                 };
                 this.context.Clients.Add(p);
                 this.context.SaveChanges();

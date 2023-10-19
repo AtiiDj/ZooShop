@@ -21,7 +21,7 @@ namespace ZooShop.Models
         [Required]
         public string Colour { get; set; }
         public int ShopId { get; set; }
-        public virtual Shop Shops { get; set; }
+        public virtual Shop Shop { get; set; }
 
         public int ClientId { get; set; }
         public virtual Client Clients { get; set; }
